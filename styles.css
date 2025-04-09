@@ -7,14 +7,16 @@ body {
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 карточек в строке */
-  gap: 20px;
+  gap: 30px; /* Увеличено расстояние между карточками */
   justify-content: center;
   justify-items: center;
+  row-gap: 30px; /* Отступы по вертикали */
+  margin-top: 40px; /* Отступ сверху для каждой секции */
 }
 
 .card {
   width: 150px;
-  height: 140px;
+  height: 160px; /* Немного увеличил высоту, чтобы уместились оба элемента */
   perspective: 1000px; /* Для создания 3D эффекта при вращении */
 }
 
@@ -37,6 +39,7 @@ body {
   height: 100%;
   backface-visibility: hidden; /* Скрываем заднюю сторону */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -70,3 +73,4 @@ body {
   font-size: 2em;
   margin-top: 10px;
 }
+
