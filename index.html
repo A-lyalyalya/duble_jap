@@ -11,20 +11,21 @@
   <main>
     <!-- Карточки с переворотом -->
     <section class="page grid-layout">
-      <!-- Карточка 1 -->
-      <div class="card" onclick="this.classList.toggle('flipped')">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="romaji">hana</div>
-            <div class="hiragana">はな</div>
-          </div>
-          <div class="card-back">
-            <div class="emoji">🌸</div>
-            <div class="translation">цветок</div>
-            <img src="https://i.imgur.com/qqWEEyu.png" alt="Onizuka smelling flowers" style="width: 80px; margin-top: 10px;">
-          </div>
-        </div>
-      </div>
+<!-- Карточка 1 (цветок) с изображением Онидзуки -->
+<div class="card" onclick="this.classList.toggle('flipped')">
+  <div class="card-inner">
+    <div class="card-front">
+      <div class="romaji">hana</div>
+      <div class="hiragana">はな</div>
+    </div>
+    <div class="card-back">
+      <div class="emoji">🌸</div>
+      <div class="translation">цветок</div>
+      <!-- Здесь добавляем картинку с Онидзукой -->
+      <img src="https://i.imgur.com/qqWEEyu.png" alt="Onizuka smelling flowers" style="width: 100px; margin-top: 10px;">
+    </div>
+  </div>
+</div>
 
       <!-- Карточка 2 -->
       <div class="card" onclick="this.classList.toggle('flipped')">
